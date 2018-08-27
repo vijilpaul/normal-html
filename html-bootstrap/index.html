@@ -27,25 +27,158 @@
     <header class="header">
     <div class="container">
         <div class="row">
-            <div class="col-sm-4"><a href="index.html"><img src="assets/images/Rage_Logo.png" alt="Rage" title="Rage"></a></div>
+            <div class="col-sm-4">
+                <a href="index.html"><img src="assets/images/Rage_Logo.png" alt="Rage" title="Rage"></a>
+                <a class="header__menuMobile" href="javascript:;" title="menu icon">
+                    <span class="header__iconBbar"></span>
+                    <span class="header__iconBbar"></span>
+                    <span class="header__iconBbar"></span>
+                </a>
+            </div>
             <div class="col-sm-8">
-                <ul class="header__menu">
-                    <li class="active"><a href="index.html" title="DASHBOARD">DASHBOARD</a></li>
-                    <li><a href="javascript:;" title="JURY">JURY</a></li>
-                    <li><a href="javascript:;" title="RULES">RULES</a></li>
-                    <li class="header__logout"><a href="javascript:;" title="LOGOUT">LOGOUT</a></li>
-                </ul>
+                <div class="header__mobilePostion">
+                    <a href="javascript:;" class="header__mobMenuClose">X</a>
+                    <ul class="header__menu">
+                        <li><a href="index.html" title="DASHBOARD">DASHBOARD</a></li>
+                        <li><a href="jury.html" title="JURY">JURY</a></li>
+                        <li><a href="javascript:;" title="RULES">RULES</a></li>
+                        <li class="header__logout"><a href="javascript:;" title="LOGOUT">LOGOUT</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </header>
     <main class="dashboard">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
+        <section class="dashboard__shortlistProfile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="dashboard__profile">
+                            <figure><img src="assets/images//Jury_Profile.png" alt="profile" title="Elizabeth Pearson"></figure>
+                            <p>Elizabeth Pearson</p>
+                            <h4 class="dashboard__title">Your Shortlists</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__reviewEntries">
+                    <ul class="dashboard__entriesList">
+                        <li><span class="dashboard__listText">TOTAL SHORTLISTED ENTRIES</span> <span class="dashboard__count">25</span></li>
+                        <li><span class="dashboard__listText">Completed Categories</span> <span class="dashboard__count">3/6</span></li>
+                        <li><span class="dashboard__listText">Reviewed Entries</span> <span class="dashboard__count">130</span></li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="dashboard__category">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 class="dashboard__categoryTitle">Categories</h4>
+                        <ul class="dashboard__categoryList">
+                            <li>
+                                <a href="categories-details.html" title="Website Design">
+                                    <span class="dashboard__categoryName">Website Design</span>
+                                    <figure><img src="assets/images/Categories-Thumb-01.png" alt="Website Design" title="Website Design"></figure>
+                                    <div class="dashboard__total">
+                                        <div class="dashboard__totalLeft">
+                                            <p><span class="lightblue">130</span> Total<br>Submissions</p>
+                                        </div>
+                                        <div class="dashboard__totalRight">
+                                            <p><span class="lightpink">04</span> SHORTLISTED<br>ENTRIES</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="categories-details.html" title="E-Commerce">
+                                    <span class="dashboard__categoryName">E-Commerce</span>
+                                    <figure><img src="assets/images/Categories-Thumb-02.png" alt="E-Commerce" title="E-Commerce"></figure>
+                                    <div class="dashboard__total">
+                                        <div class="dashboard__totalLeft">
+                                            <p><span class="lightblue">140</span> Total<br>Submissions</p>
+                                        </div>
+                                        <div class="dashboard__totalRight">
+                                            <p><span class="lightpink">0</span> SHORTLISTED<br>ENTRIES</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="categories-details.html" title="UI/UX">
+                                    <span class="dashboard__categoryName">UI/UX</span>
+                                    <figure><img src="assets/images/Categories-Thumb-03.png" alt="UI/UX" title="UI/UX"></figure>
+                                    <div class="dashboard__total">
+                                        <div class="dashboard__totalLeft">
+                                            <p><span class="lightblue">07</span> Total<br>Submissions</p>
+                                        </div>
+                                        <div class="dashboard__totalRight">
+                                            <p><span class="lightpink">02</span> SHORTLISTED<br>ENTRIES</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="categories-details.html" title="Social Media">
+                                    <span class="dashboard__categoryName">Social Media</span>
+                                    <figure><img src="assets/images/Categories-Thumb-04.png" alt="Social Media" title="Social Media"></figure>
+                                    <div class="dashboard__total">
+                                        <div class="dashboard__totalLeft">
+                                            <p><span class="lightblue">22</span> Total<br>Submissions</p>
+                                        </div>
+                                        <div class="dashboard__totalRight">
+                                            <p><span class="lightpink">04</span> SHORTLISTED<br>ENTRIES</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="categories-details.html" title="Digital Campaign">
+                                    <span class="dashboard__categoryName">Digital Campaign</span>
+                                    <figure><img src="assets/images/Categories-Thumb-01.png" alt="Digital Campaign" title="Digital Campaign"></figure>
+                                    <div class="dashboard__total">
+                                        <div class="dashboard__totalLeft">
+                                            <p><span class="lightblue">44</span> Total<br>Submissions</p>
+                                        </div>
+                                        <div class="dashboard__totalRight">
+                                            <p><span class="lightpink">06</span> SHORTLISTED<br>ENTRIES</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="categories-details.html" title="Digital Innovation">
+                                    <span class="dashboard__categoryName">Digital Innovation</span>
+                                    <figure><img src="assets/images/Categories-Thumb-02.png" alt="Digital Innovation" title="Digital Innovation"></figure>
+                                    <div class="dashboard__total">
+                                        <div class="dashboard__totalLeft">
+                                            <p><span class="lightblue">46</span> Total<br>Submissions</p>
+                                        </div>
+                                        <div class="dashboard__totalRight">
+                                            <p><span class="lightpink">0</span> SHORTLISTED<br>ENTRIES</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="categories-details.html" title="Brand Identity">
+                                    <span class="dashboard__categoryName">Brand Identity</span>
+                                    <figure><img src="assets/images/Categories-Thumb-03.png" alt="Brand Identity" title="Brand Identity"></figure>
+                                    <div class="dashboard__total">
+                                        <div class="dashboard__totalLeft">
+                                            <p><span class="lightblue">130</span> Total<br>Submissions</p>
+                                        </div>
+                                        <div class="dashboard__totalRight">
+                                            <p><span class="lightpink">04</span> SHORTLISTED<br>ENTRIES</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer" id="footer">
     <div class="container">
@@ -53,6 +186,7 @@
         <p class="footer__text footer__text--copyrights">© 1996 - 2018 Rage Communications Pvt.</p>
     </div>
 </footer>
+
     <!--Script-->
     <script src="assets/js/lib.js"></script>
     <script src="assets/js/ui.js"></script>
