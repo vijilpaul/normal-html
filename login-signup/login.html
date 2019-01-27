@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if IE 10]> <html lang="en" class="no-js ie10"> <![endif]-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--Title-->
+    <title>Login</title>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Project: Description">
+    <meta name="keywords" content="Project: Keywords">
+    <meta name="author" content="Login">
+    <meta name="copyright" content="&copy; Project 2018">
+    <meta name="robot" content="noindex, nofollow">
+    <!--Css-->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!--[if lte IE 9]>
+        <script src="assets/js/polyfill.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<main class="main__wrap">
+    <section class="center__wrap">
+    	<!--Logo Section start-->
+    	<div class="logo__sec"><img src="assets/images/logo.png" alt="UST Global" title="UST Global" /></div>
+        <!--Logo Section end-->
+        
+        <!--Login Box start-->
+        <div class="login__box">
+        	<h1 class="title">Welcome to <span>UST Global</span></h1>
+            <h6 class="sub__title">Login to view your profile</h6>
+            <div class="login__form">
+            	<form  name="loginForm" onSubmit="return(loginValidate());">
+                	<div class="input__sec" data-placeholder="Email">
+						<input name="emailAddress" value="" type="text" class="input-email req">
+                        <span class="form__error"></span>
+					</div>
+                    <div class="input__sec" data-placeholder="Password">
+						<input name="password" value="" type="password" class="input-password req">
+                        <span class="form__error"></span>
+					</div>
+                    <input type="submit" value="Login" class="btn__login" />
+                </form>
+            </div>
+            <div class="signup__forgot">
+            	<p class="para__newuser">New User? <a href="signup.html">Signup now</a><span><a href="javascript:;">Forgot password?</a></span></p>
+            </div>
+        </div>
+        <!--Login Box end-->
+    </section>
+</main>
+    <!--Script-->
+    <script src="assets/js/lib.js"></script>
+    <script src="assets/js/ui.js"></script>
+</body>
+
+</html>

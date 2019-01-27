@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if IE 10]> <html lang="en" class="no-js ie10"> <![endif]-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--Title-->
+    <title>Sign Up</title>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Project: Description">
+    <meta name="keywords" content="Project: Keywords">
+    <meta name="author" content="Login">
+    <meta name="copyright" content="&copy; Project 2018">
+    <meta name="robot" content="noindex, nofollow">
+    <!--Css-->
+    <link href="assets/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--[if lte IE 9]>
+        <script src="assets/js/polyfill.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<main class="main__wrap">
+    <section class="signup__wrap">
+    	<!--Logo Section start-->
+    	<div class="logo__sec"><img src="assets/images/logo.png" alt="UST Global" title="UST Global" /></div>
+        <!--Logo Section end-->
+        
+        <!--Login Box start-->
+        <div class="signup__box">
+        	<h1 class="title">Welcome to <span>UST Global</span></h1>
+            <h6 class="sub__title">Register new user</h6>
+            <div class="signup__form">
+            	<form action="success.html" name="signForm" onSubmit="return(signupValidate());">
+                	<div class="input__sec" data-placeholder="Name">
+						<input name="Name" value="" type="text" class="input-name req">
+                        <span class="form__error"></span>
+					</div>
+                    <div class="input__sec" data-placeholder="Mail id">
+						<input name="Mail" value="" type="text" class="input-mail req">
+                        <span class="form__error"></span>
+					</div>
+                    <div class="input__sec" data-placeholder="Phone number">
+						<input name="Phone" value="" type="tel" class="input-phone req">
+                        <span class="form__error"></span>
+					</div>
+                    <div class="input__sec" data-placeholder="Username">
+						<input name="Username" value="" type="text" class="input-username req">
+                        <span class="form__error"></span>
+					</div>
+                    <div class="input__sec" data-placeholder="Password">
+						<input name="Password" value="" type="Password" class="input-password-signup req">
+                        <span class="form__error"></span>
+					</div>
+                    <div class="input__sec date__picker" data-placeholder="Date of Birth">
+						<input name="date" value="" type="text" class="input-date req" id="datepicker">
+                        <span class="form__error"></span>
+					</div>
+                    <div class="input__sec" data-placeholder="Confirm Password">
+						<input name="Confirm Password" value="" type="Password" class="input-confirm-password req">
+                        <span class="form__error"></span>
+					</div>
+                    <div class="input__sec">
+						<select>
+                          <option value="Country">Country</option>
+                          <option value="India">India</option>
+                          <option value="USA">USA</option>
+                          <option value="UK">UK</option>
+                          <option value="Australia">Australia</option>
+                        </select>
+                        <span class="form__error"></span>
+					</div>
+                    <div class="input__sec">
+						<select>
+                          <option value="State">State</option>
+                          <option value="Kerala">Kerala</option>
+                          <option value="Tamil Nadu">Tamil Nadu</option>
+                          <option value="Karnataka">Karnataka</option>
+                        </select>
+                        <span class="form__error"></span>
+					</div>
+                    <div class="input__sec" data-placeholder="City">
+						<input name="City" value="" type="text" class="input-city req">
+                        <span class="form__error"></span>
+					</div>
+                    <div class="input__sec">
+                    	<div class="img__viewsec">
+                        </div>
+                    	<div class="img__upload">
+                        	<input type="file" name="image" id="image-upload">
+                            <label for="image-upload" id="image-label">Add photo</label>
+                            
+                        </div>
+					</div>
+                    <div class="input__sec">
+                    	<input type="submit" value="Signup" class="btn__login" />
+                    </div>
+                </form>
+            </div>
+            <div class="signup__forgot">
+            	<p class="para__newuser"><span>Existing User? <a href="login.html">Login</a></span></p>
+            </div>
+        </div>
+        <!--Login Box end-->
+    </section>
+</main>
+    <!--Script-->
+    <script src="assets/js/lib.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</body>
+
+</html>
